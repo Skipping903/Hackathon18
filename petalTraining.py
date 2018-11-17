@@ -115,7 +115,7 @@ predict_dataset = tf.convert_to_tensor([
     [6.9, 3.1, 5.4, 2.1]
 ])
 
-predictions = model(predict_dataset)
+predictions = model(predict_dataset2)
 
 for i, logits in enumerate(predictions):
   class_idx = tf.argmax(logits).numpy()
